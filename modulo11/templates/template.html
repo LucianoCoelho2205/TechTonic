@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href= "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/style.css"> 
+    
+    <title>TechTonic</title>
+
+</head>
+<body>
+
+    <header>
+        <div id="logo">
+            <a href="/">
+                <img src="{{ url_for('static',filename='logo.png')}}" id="logo">
+            </a>
+        </div>
+        <ul>
+            <li>
+                <a href="/novo">Cadastrar</a>
+            </li>
+            <li>
+                <a href="/">home</a>
+            </li>
+
+            <li>
+              <a href="/login">Entrar</a>
+          </li>
+
+          <li class="nav-item">
+              <a class="nav-link" href="/logout">Sair</a>
+          </li>
+
+        </ul>
+    </header> 
+    
+    <div id='tabela' class="container">
+
+        <div id='tabela2' class="page-header">
+        
+            <h1>
+                {{ titulo }} 
+            </h1>
+        </div>
+             
+        {%block conteudo%}
+        
+        {%endblock%}
+
+    </div>
+    
+
+
+    <div class="backg">
+        <div class="planet">
+          <div class="r1"></div>
+          <div class="r2"></div>
+          <div class="r3"></div>
+          <div class="r4"></div>
+          <div class="r5"></div>
+          <div class="r6"></div>
+          <div class="r7"></div>
+          <div class="r8"></div>
+          <div class="shad"></div>
+        </div>
+        <div class="stars">
+          <div class="s1"></div>
+          <div class="s2"></div>
+          <div class="s3"></div>
+          <div class="s4"></div>
+          <div class="s5"></div>
+          <div class="s6"></div>
+        </div>
+        <div class="an">
+          <div class="tank"></div>
+          <div class="astro">
+              
+              <div class="helmet">
+                <div class="glass">
+                  <div class="shine"></div>
+                </div>
+              </div>
+              <div class="dress">
+                <div class="c">
+                  <div class="btn1"></div>
+                  <div class="btn2"></div>
+                  <div class="btn3"></div>
+                  <div class="btn4"></div>
+                </div>
+              </div>
+              <div class="handl">
+                <div class="handl1">
+                  <div class="glovel">
+                    <div class="thumbl"></div>
+                    <div class="b2"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="handr">
+                <div class="handr1">
+                  <div class="glover">
+                    <div class="thumbr"></div>
+                    <div class="b1"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="legl">
+                <div class="bootl1">
+                  <div class="bootl2"></div>
+                </div>
+              </div>
+              <div class="legr">
+                <div class="bootr1">
+                  <div class="bootr2"></div>
+                </div>
+              </div>
+              <div class="pipe">
+                <div class="pipe2">
+                  <div class="pipe3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+
+        </div>
+
+<!-- 
+<div class="loop-wrapper">
+    <div class="mountain"></div>
+    <div class="hill"></div>
+    <div class="tree"></div>
+    <div class="tree"></div>
+    <div class="tree"></div>
+    <div class="rock"></div>
+    <div class="truck"></div>  
+    <div class="wheels"></div>
+  </div> 
+   -->     
+
+    <footer>
+        <h3>Cadastro de Carros</h3>
+    </footer>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    </body>
+</html> 

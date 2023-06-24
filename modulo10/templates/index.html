@@ -1,0 +1,33 @@
+{% extends "template.html" %}
+{%block conteudo%}
+
+<table class="table table-striped table-dark">
+
+    <thead>
+        <tr>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Ano</th>
+            <th>Cor</th>
+            <th>Preço</th>
+            <th>Placa</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {% for carro in carros %}
+        <tr>
+
+            <td>{{carro.marca}}</td>
+            <td>{{carro.modelo}}</td>
+            <td>{{carro.ano}}</td>
+            <td>{{carro.cor}}</td>
+            <td>{{carro.preço}}</td>
+            <td>{{carro.placa}}</td>
+
+        </tr>
+        {% endfor %}
+    </tbody>
+
+</table>
+{%endblock%}
